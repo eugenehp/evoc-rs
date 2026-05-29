@@ -1,0 +1,407 @@
+    Updating crates.io index
+warning: spurious network error (3 tries remaining): failed to get successful HTTP response from `https://index.crates.io/al/ga/alga` (151.101.194.137), got 503
+body:
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>503 Backend unavailable, connection timeout</title>
+  </head>
+  <body>
+    <h1>Error 503 Backend unavailable, connection timeout</h1>
+    <p>Backend unavailable, connection timeout</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-bos-kbos510043-BOS 1779948575 1701054495</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</htm…
+warning: spurious network error (2 tries remaining): failed to get successful HTTP response from `https://index.crates.io/al/ga/alga` (151.101.194.137), got 503
+body:
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>503 between bytes timeout</title>
+  </head>
+  <body>
+    <h1>Error 503 between bytes timeout</h1>
+    <p>between bytes timeout</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-bos-kbos510043-BOS 1779948593 1701108871</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+
+     Locking 34 packages to latest compatible versions
+      Adding aho-corasick v1.1.4
+      Adding anes v0.1.6
+      Adding anstyle v1.0.14
+      Adding cast v0.3.0
+      Adding ciborium v0.2.2
+      Adding ciborium-io v0.2.2
+      Adding ciborium-ll v0.2.2
+      Adding clap v4.6.1
+      Adding clap_builder v4.6.0
+      Adding clap_lex v1.1.0
+      Adding criterion v0.5.1 (available: v0.8.2)
+      Adding criterion-plot v0.5.0
+      Adding futures-core v0.3.32
+      Adding futures-task v0.3.32
+      Adding futures-util v0.3.32
+      Adding is-terminal v0.4.17
+      Adding itertools v0.10.5
+      Adding js-sys v0.3.99
+      Adding oorandom v11.1.5
+      Adding pin-project-lite v0.2.17
+      Adding plotters v0.3.7
+      Adding plotters-backend v0.3.7
+      Adding plotters-svg v0.3.7
+      Adding regex v1.12.3
+      Adding regex-automata v0.4.14
+      Adding regex-syntax v0.8.10
+      Adding rustversion v1.0.22
+      Adding slab v0.4.12
+      Adding tinytemplate v1.2.1
+      Adding wasm-bindgen v0.2.122
+      Adding wasm-bindgen-macro v0.2.122
+      Adding wasm-bindgen-macro-support v0.2.122
+      Adding wasm-bindgen-shared v0.2.122
+      Adding web-sys v0.3.99
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling autocfg v1.5.1
+   Compiling libm v0.2.16
+   Compiling bytemuck v1.25.0
+   Compiling cfg-if v1.0.4
+   Compiling libc v0.2.186
+   Compiling nano-gemm-codegen v0.1.0
+   Compiling crossbeam-utils v0.8.21
+   Compiling reborrow v0.5.5
+   Compiling thiserror v1.0.69
+   Compiling version_check v0.9.5
+   Compiling zerocopy v0.8.49
+   Compiling heck v0.5.0
+   Compiling paste v1.0.15
+   Compiling byteorder v1.5.0
+   Compiling bitflags v2.11.1
+   Compiling pulp v0.21.5
+   Compiling once_cell v1.21.4
+   Compiling num-traits v0.2.19
+   Compiling dyn-stack-macros v0.1.3
+   Compiling raw-cpuid v11.6.0
+   Compiling either v1.16.0
+   Compiling seq-macro v0.3.6
+   Compiling memchr v2.8.1
+   Compiling rayon-core v1.13.0
+   Compiling matrixmultiply v0.3.10
+   Compiling dyn-stack v0.13.2
+   Compiling nano-gemm-core v0.1.0
+   Compiling crc32fast v1.5.0
+   Compiling ucd-trie v0.1.7
+   Compiling rawpointer v0.2.1
+   Compiling simd-adler32 v0.3.9
+   Compiling serde_core v1.0.228
+   Compiling nano-gemm-f64 v0.1.0
+   Compiling nano-gemm-f32 v0.1.0
+   Compiling crossbeam-epoch v0.9.18
+   Compiling syn v2.0.117
+   Compiling pest v2.8.6
+   Compiling crossbeam-deque v0.8.6
+   Compiling nano-gemm-c64 v0.1.0
+   Compiling nano-gemm-c32 v0.1.0
+   Compiling num-complex v0.2.4
+   Compiling adler2 v2.0.1
+   Compiling thiserror v2.0.18
+   Compiling miniz_oxide v0.8.9
+   Compiling getrandom v0.2.17
+   Compiling find-msvc-tools v0.1.9
+   Compiling zip v2.4.2
+   Compiling zmij v1.0.21
+   Compiling bumpalo v3.20.3
+   Compiling rayon v1.12.0
+   Compiling log v0.4.30
+   Compiling shlex v1.3.0
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.17.1
+   Compiling serde v1.0.228
+   Compiling cc v1.2.62
+   Compiling zopfli v0.8.3
+   Compiling num-complex v0.4.6
+   Compiling num-integer v0.1.46
+   Compiling pest_meta v2.8.6
+   Compiling indexmap v2.14.0
+   Compiling num-bigint v0.4.6
+   Compiling pulp v0.18.22
+   Compiling approx v0.3.2
+   Compiling flate2 v1.1.9
+   Compiling rand_core v0.6.4
+   Compiling pest_generator v2.8.6
+   Compiling matrixcompare-core v0.1.0
+   Compiling coe-rs v0.1.2
+   Compiling serde_json v1.0.150
+   Compiling matrixcompare v0.3.0
+   Compiling alga v0.9.3
+   Compiling evoc v0.3.1 (/Users/Shared/evoc-rs)
+   Compiling ndarray v0.17.2
+   Compiling num_cpus v1.17.0
+   Compiling dyn-stack v0.11.0
+   Compiling dbgf v0.1.2
+   Compiling ndarray v0.16.1
+   Compiling regex-syntax v0.8.10
+   Compiling plotters-backend v0.3.7
+   Compiling thiserror-impl v1.0.69
+   Compiling enum-as-inner v0.6.1
+   Compiling zerocopy-derive v0.8.49
+   Compiling equator-macro v0.2.1
+   Compiling thiserror-impl v2.0.18
+   Compiling equator v0.2.2
+   Compiling pest_derive v2.8.6
+   Compiling sysctl v0.6.0
+   Compiling displaydoc v0.2.6
+   Compiling equator-macro v0.4.2
+   Compiling serde_derive v1.0.228
+   Compiling py_literal v0.4.0
+   Compiling faer-entity v0.20.1
+   Compiling equator v0.4.2
+   Compiling ciborium-io v0.2.2
+   Compiling anstyle v1.0.14
+   Compiling clap_lex v1.1.0
+   Compiling gemm-common v0.18.2
+   Compiling itoa v1.0.18
+   Compiling generativity v1.2.1
+   Compiling smallvec v1.15.1
+   Compiling gemm-c32 v0.18.2
+   Compiling gemm-f64 v0.18.2
+   Compiling gemm-c64 v0.18.2
+   Compiling gemm-f32 v0.18.2
+   Compiling ndarray-npy v0.9.1
+   Compiling clap_builder v4.6.0
+   Compiling gemm v0.18.2
+   Compiling nano-gemm v0.1.3
+   Compiling ppv-lite86 v0.2.21
+   Compiling half v2.7.1
+   Compiling faer v0.20.2
+   Compiling rand_chacha v0.3.1
+   Compiling regex-automata v0.4.14
+   Compiling ciborium-ll v0.2.2
+   Compiling rand v0.8.6
+   Compiling plotters-svg v0.3.7
+   Compiling sprs v0.11.4
+   Compiling itertools v0.10.5
+   Compiling cast v0.3.0
+   Compiling rustc-hash v2.1.2
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
+   Compiling plotters v0.3.7
+   Compiling ciborium v0.2.2
+   Compiling clap v4.6.1
+   Compiling tinytemplate v1.2.1
+   Compiling regex v1.12.3
+   Compiling is-terminal v0.4.17
+   Compiling oorandom v11.1.5
+   Compiling anes v0.1.6
+   Compiling approx v0.5.1
+   Compiling criterion-plot v0.5.0
+   Compiling criterion v0.5.1
+warning: unused import: `Axis`
+  --> src/clustering.rs:20:31
+   |
+20 | use ndarray::{Array1, Array2, Axis};
+   |                               ^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `apply_graph_update_array`
+ --> src/nndescent/float.rs:4:5
+  |
+4 |     apply_graph_update_array, apply_sorted_graph_updates, build_candidates, deheap_sort,
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `rayon::prelude`
+ --> src/label_prop.rs:9:5
+  |
+9 | use rayon::prelude::*;
+  |     ^^^^^^^^^^^^^^
+
+warning: unused variable: `n_features`
+   --> src/boruvka.rs:385:13
+    |
+385 |         let n_features = tree.data.ncols();
+    |             ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_n_features`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `n_rows`
+   --> src/label_prop.rs:126:9
+    |
+126 |     let n_rows = indptr.len() - 1;
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_n_rows`
+
+warning: variable does not need to be mutable
+   --> src/label_prop.rs:195:9
+    |
+195 |     let mut rng_state = rng.randint3_for_tau();
+    |         ----^^^^^^^^^
+    |         |
+    |         help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> src/np_argsort.rs:106:60
+    |
+106 | fn aheapsort_f32(keys: &[f32], a: &mut [isize], pl: isize, mut n: isize) {
+    |                                                            ----^
+    |                                                            |
+    |                                                            help: remove this `mut`
+
+warning: field `radius` is never read
+  --> src/kdtree.rs:13:9
+   |
+ 8 | pub struct KdTree {
+   |            ------ field in this struct
+...
+13 |     pub radius: Array1<f32>,
+   |         ^^^^^^
+   |
+   = note: `KdTree` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `INT32_MIN` is never used
+  --> src/label_prop.rs:14:7
+   |
+14 | const INT32_MIN: i64 = i32::MIN as i64 + 1;
+   |       ^^^^^^^^^
+
+warning: constant `INT32_MAX` is never used
+  --> src/label_prop.rs:15:7
+   |
+15 | const INT32_MAX: i64 = i32::MAX as i64 - 1;
+   |       ^^^^^^^^^
+
+warning: variant `UnknownBaseInit` is never constructed
+  --> src/label_prop.rs:22:5
+   |
+18 | pub enum LabelPropError {
+   |          -------------- variant in this enum
+...
+22 |     UnknownBaseInit(String),
+   |     ^^^^^^^^^^^^^^^
+   |
+   = note: `LabelPropError` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: variants `Random`, `Spectral`, and `Mds` are never constructed
+  --> src/label_prop.rs:29:5
+   |
+27 | pub enum BaseInit {
+   |          -------- variants in this enum
+28 |     Pca,
+29 |     Random,
+   |     ^^^^^^
+30 |     Spectral,
+   |     ^^^^^^^^
+31 |     Mds,
+   |     ^^^
+   |
+   = note: `BaseInit` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: associated function `parse` is never used
+  --> src/label_prop.rs:35:12
+   |
+34 | impl BaseInit {
+   | ------------- associated function in this implementation
+35 |     pub fn parse(s: &str) -> Result<Self, LabelPropError> {
+   |            ^^^^^
+
+warning: variants `JitterExpander` and `NodeEmbedding` are never constructed
+  --> src/label_prop.rs:50:5
+   |
+48 | pub enum Upscaling {
+   |          --------- variants in this enum
+49 |     PartitionExpander,
+50 |     JitterExpander,
+   |     ^^^^^^^^^^^^^^
+51 |     NodeEmbedding,
+   |     ^^^^^^^^^^^^^
+   |
+   = note: `Upscaling` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: associated function `parse` is never used
+  --> src/label_prop.rs:55:12
+   |
+54 | impl Upscaling {
+   | -------------- associated function in this implementation
+55 |     pub fn parse(s: &str) -> Self {
+   |            ^^^^^
+
+warning: function `normalize_cols_l1` is never used
+   --> src/label_prop.rs:230:8
+    |
+230 | pub fn normalize_cols_l1(mat: &mut CsMat<f32>) {
+    |        ^^^^^^^^^^^^^^^^^
+
+warning: function `svd_flip_vt` is never used
+   --> src/label_prop.rs:304:4
+    |
+304 | fn svd_flip_vt(vt: &mut Array2<f32>, u: &mut Array2<f32>) {
+    |    ^^^^^^^^^^^
+
+warning: function `pca_init_array` is never used
+   --> src/label_prop.rs:322:8
+    |
+322 | pub fn pca_init_array(data: &Array2<f32>, n_components: usize) -> Array2<f32> {
+    |        ^^^^^^^^^^^^^^
+
+warning: constant `EXP_NEG_INF` is never used
+  --> src/nndescent/float.rs:11:11
+   |
+11 | pub const EXP_NEG_INF: f32 = f32::MIN_POSITIVE;
+   |           ^^^^^^^^^^^
+
+warning: function `argsort_f32_heapsort` is never used
+   --> src/np_argsort.rs:167:4
+    |
+167 | fn argsort_f32_heapsort(keys: &[f32]) -> Vec<usize> {
+    |    ^^^^^^^^^^^^^^^^^^^^
+
+warning: function `seed` is never used
+ --> src/rng.rs:4:8
+  |
+4 | pub fn seed(state: &mut [i64; 3], seed: i64) {
+  |        ^^^^
+
+warning: `evoc` (lib) generated 21 warnings (run `cargo fix --lib -p evoc` to apply 6 suggestions)
+    Finished `bench` profile [optimized] target(s) in 42.96s
+     Running benches/evoc_bench.rs (target/release/deps/evoc_bench-540056c141cb8000)
+Gnuplot not found, using plotters backend
+Benchmarking fit_predict/evoc/small_200
+Benchmarking fit_predict/evoc/small_200: Warming up for 3.0000 s
+Benchmarking fit_predict/evoc/small_200: Collecting 20 samples in estimated 5.0553 s (80 iterations)
+Benchmarking fit_predict/evoc/small_200: Analyzing
+fit_predict/evoc/small_200
+                        time:   [61.531 ms 61.858 ms 62.197 ms]
+Benchmarking fit_predict/evoc/medium_800
+Benchmarking fit_predict/evoc/medium_800: Warming up for 3.0000 s
+Benchmarking fit_predict/evoc/medium_800: Collecting 20 samples in estimated 6.2062 s (80 iterations)
+Benchmarking fit_predict/evoc/medium_800: Analyzing
+fit_predict/evoc/medium_800
+                        time:   [77.429 ms 77.927 ms 78.507 ms]
+Found 2 outliers among 20 measurements (10.00%)
+  1 (5.00%) high mild
+  1 (5.00%) high severe
+Benchmarking fit_predict/evoc/large_2000
+Benchmarking fit_predict/evoc/large_2000: Warming up for 3.0000 s
+Benchmarking fit_predict/evoc/large_2000: Collecting 20 samples in estimated 7.0027 s (60 iterations)
+Benchmarking fit_predict/evoc/large_2000: Analyzing
+fit_predict/evoc/large_2000
+                        time:   [115.67 ms 116.17 ms 116.70 ms]
+Found 1 outliers among 20 measurements (5.00%)
+  1 (5.00%) high mild
+

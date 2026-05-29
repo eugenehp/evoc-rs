@@ -1,0 +1,153 @@
+[package]
+name = "evoc"
+version = "0.0.1"
+edition = "2021"
+rust-version = "1.70"
+description = "Embedding Vector Oriented Clustering — fast clustering of high-dimensional embedding vectors (Rust port of EVōC)"
+license = "BSD-2-Clause"
+readme = "README.md"
+documentation = "https://docs.rs/evoc"
+homepage = "https://github.com/eugenehp/evoc-rs"
+repository = "https://github.com/eugenehp/evoc-rs"
+keywords = ["clustering", "embeddings", "knn", "hdbscan", "umap"]
+categories = ["science", "algorithms"]
+authors = ["Eugene Hauptmann"]
+# Dev-only paths (parity fixtures, benchmarks, scripts) — not published to crates.io.
+exclude = [
+    "/.venv-parity",
+    "/examples/output",
+    "/examples/*.py",
+    "/tests/fixtures",
+    "/benches/history",
+    "/scripts",
+]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+ndarray = { version = "0.16", features = ["rayon"] }
+rayon = "1.10"
+rand = "0.8"
+sprs = "0.11"
+rustc-hash = "2"
+thiserror = "2"
+serde_json = { version = "1", optional = true }
+faer = { version = "0.20", default-features = false, features = ["std", "svd", "evd"] }
+ndarray-npy = { version = "0.9", optional = true }
+rlx-cpu = { version = "0.2.1", optional = true }
+rlx = { version = "0.2.1", optional = true, default-features = false }
+ureq = { version = "2.12", default-features = false, features = ["gzip", "tls"], optional = true }
+flate2 = { version = "1.1", optional = true }
+tar = { version = "0.4", optional = true }
+zip = { version = "2.2", default-features = false, features = ["deflate"], optional = true }
+
+[features]
+default = ["full"]
+# Convenience: enable the full pipeline, `.npy` I/O, and bundled dataset loaders.
+full = ["cluster", "npy", "datasets"]
+# Pipeline stages (each implies the previous).
+cluster = ["embed"]
+embed = ["init"]
+init = ["graph"]
+graph = ["knn"]
+knn = ["dep:rlx-cpu"]
+# `.npy` / `.npz` parity and benchmark I/O.
+npy = ["dep:ndarray-npy"]
+# JSON lines from `bench_backends --json`
+bench-json = ["dep:serde_json"]
+# Download + vectorize MNIST, Fashion-MNIST, BBC News, 20 Newsgroups.
+datasets = ["npy", "dep:ureq", "dep:flate2", "dep:tar", "dep:zip"]
+# Optional RLX compute backends (each stands alone; delegate to strict until GPU kernels land).
+rlx-cpu = ["cluster"]
+rlx-cuda = ["cluster", "dep:rlx", "rlx/cpu", "rlx/cuda"]
+rlx-mlx = ["cluster", "dep:rlx", "rlx/cpu", "rlx/mlx"]
+rlx-rocm = ["cluster", "dep:rlx", "rlx/cpu", "rlx/rocm"]
+rlx-wgpu = ["cluster", "dep:rlx", "rlx/cpu", "rlx/gpu"]
+# Enable every RLX backend (optional convenience). Do not name this `rlx` — that
+# collides with the implicit feature for optional dep `rlx` and would enable all
+# backends whenever any `dep:rlx` backend feature is used.
+rlx-all = ["rlx-cpu", "rlx-cuda", "rlx-mlx", "rlx-rocm", "rlx-wgpu"]
+# Back-compat alias
+rlx_metal = ["rlx-mlx"]
+
+[dev-dependencies]
+approx = "0.5"
+serde_json = "1"
+rand_chacha = "0.3"
+criterion = "0.5"
+ndarray = { version = "0.16", features = ["rayon"] }
+ndarray-npy = "0.9"
+
+[build-dependencies]
+cc = "1.2"
+
+[[bin]]
+name = "backend_smoke"
+path = "src/bin/backend_smoke.rs"
+required-features = ["cluster", "npy"]
+
+[[bin]]
+name = "bench_backends"
+path = "src/bin/bench_backends.rs"
+required-features = ["cluster", "npy", "bench-json"]
+
+[[bin]]
+name = "bench"
+path = "src/bin/bench.rs"
+required-features = ["cluster", "npy"]
+
+[[bin]]
+name = "bench_huge"
+path = "src/bin/bench_huge.rs"
+required-features = ["cluster"]
+
+[[bin]]
+name = "emb_epoch_diff"
+path = "src/bin/emb_epoch_diff.rs"
+required-features = ["cluster", "npy"]
+
+[[bin]]
+name = "fashion_mnist_fetch"
+path = "src/bin/fashion_mnist_fetch.rs"
+required-features = ["datasets"]
+
+[[bin]]
+name = "mnist_fetch"
+path = "src/bin/mnist_fetch.rs"
+required-features = ["datasets"]
+
+[[bin]]
+name = "mnist_labels"
+path = "src/bin/mnist_labels.rs"
+required-features = ["cluster", "datasets", "npy"]
+
+[[example]]
+name = "bbc_news_clustering"
+path = "examples/bbc_news_clustering.rs"
+required-features = ["cluster", "datasets"]
+
+[[example]]
+name = "cluster_in_memory"
+path = "examples/cluster_in_memory.rs"
+required-features = ["cluster"]
+
+[[example]]
+name = "fashion_mnist_clustering"
+path = "examples/fashion_mnist_clustering.rs"
+required-features = ["cluster", "datasets"]
+
+[[example]]
+name = "news_clustering"
+path = "examples/news_clustering.rs"
+required-features = ["cluster", "datasets"]
+
+[[example]]
+name = "user_clustering"
+path = "examples/user_clustering.rs"
+required-features = ["cluster", "npy"]
+
+[[bench]]
+name = "evoc_bench"
+harness = false
+required-features = ["cluster", "npy"]

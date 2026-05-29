@@ -1,0 +1,10 @@
+{
+  "n": 2000,
+  "d": 64,
+  "centers": 40,
+  "seed": 7,
+  "n_clusters": 51,
+  "noise": 264,
+  "python_seconds": 0.17810704099247232,
+  "n_layers": 1
+}

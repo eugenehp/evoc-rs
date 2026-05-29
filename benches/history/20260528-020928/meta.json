@@ -1,0 +1,13 @@
+{
+  "criterion_zip": "criterion.zip",
+  "git_rev": "unknown",
+  "numba_threads": "1",
+  "platform": "macOS-26.4.1-arm64-arm-64bit-Mach-O",
+  "python": "/opt/homebrew/bin/python3",
+  "python_fit_predict_seconds": 0.14854737499263138,
+  "rayon_threads": null,
+  "rust_cargo_bench_exit_code": 0,
+  "rust_cargo_bench_wall_seconds": 74.0201390000002,
+  "tag": "20260528-020928",
+  "timestamp": 1779948568.973026
+}

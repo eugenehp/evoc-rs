@@ -1,0 +1,32 @@
+{
+  "small_200": {
+    "n": 200,
+    "d": 32,
+    "centers": 10,
+    "seed": 42,
+    "n_clusters": 10,
+    "noise": 0,
+    "python_seconds": 0.12672570800350513,
+    "n_layers": 1
+  },
+  "medium_800": {
+    "n": 800,
+    "d": 32,
+    "centers": 20,
+    "seed": 42,
+    "n_clusters": 24,
+    "noise": 56,
+    "python_seconds": 0.046633542006020434,
+    "n_layers": 1
+  },
+  "large_2000": {
+    "n": 2000,
+    "d": 64,
+    "centers": 40,
+    "seed": 7,
+    "n_clusters": 51,
+    "noise": 264,
+    "python_seconds": 0.17810704099247232,
+    "n_layers": 1
+  }
+}

@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+title: "evoc (Rust): Embedding Vector Oriented Clustering"
+message: >-
+  If you use this software, please cite the PLSCAN paper, the EVōC Python
+  reference implementation, and this Rust release when results depend on evoc-rs.
+type: software
+authors:
+  - family-names: Hauptmann
+    given-names: Eugene
+repository-code: "https://github.com/eugenehp/evoc-rs"
+url: "https://github.com/TutteInstitute/evoc"
+license: BSD-2-Clause
+version: 0.0.1
+date-released: 2026-05-28
+keywords:
+  - clustering
+  - embeddings
+  - knn
+  - hdbscan
+  - umap
+preferred-citation:
+  type: article
+  title: "Persistent Multiscale Density-based Clustering"
+  authors:
+    - family-names: Bot
+      given-names: "D. M."
+    - family-names: McInnes
+      given-names: Leland
+    - family-names: Aerts
+      given-names: J.
+  year: 2025
+  doi: 10.48550/arXiv.2512.16558
+  url: "https://arxiv.org/abs/2512.16558"
+references:
+  - type: software
+    title: "EVōC: Embedding Vector Oriented Clustering"
+    authors:
+      - family-names: McInnes
+        given-names: Leland
+    repository-code: "https://github.com/TutteInstitute/evoc"
+    url: "https://evoc.readthedocs.io/en/latest/"
+  - type: software
+    title: "evoc: Embedding Vector Oriented Clustering (Rust implementation)"
+    authors:
+      - family-names: Hauptmann
+        given-names: Eugene
+    repository-code: "https://github.com/eugenehp/evoc-rs"
+    url: "https://docs.rs/evoc/0.0.1/evoc"
+    version: 0.0.1
+    date-released: 2026-05-28
